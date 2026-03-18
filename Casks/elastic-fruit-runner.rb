@@ -3,7 +3,7 @@ cask "elastic-fruit-runner" do
   name "elastic-fruit-runner"
   desc "Elastic GitHub Actions self-hosted runner manager for Apple Silicon"
   homepage "https://github.com/boring-design/elastic-fruit-runner"
-  version "0.1.2-rc.1"
+  version "0.1.2-rc.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "elastic-fruit-runner" do
   on_macos do
     on_intel do
       url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v#{version}/elastic-fruit-runner_#{version}_darwin_amd64.tar.gz"
-      sha256 "1583110a835a7ee4cd8fad5c1d635041e4ba1aecab7ab399227d3281d3232fef"
+      sha256 "e5abe145abb70d5923a2ff41ff3e990b2c36d2c738753738580bedc01ddc604d"
     end
     on_arm do
       url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v#{version}/elastic-fruit-runner_#{version}_darwin_arm64.tar.gz"
-      sha256 "1ed60c203099a9743cc748fa96016937c4d2988f4a8a9f201378b6dad5bf1dc6"
+      sha256 "bbe8022308f4055eb8b266b9843bf4267260d33b28ff14679d88be7326f97102"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v#{version}/elastic-fruit-runner_#{version}_linux_amd64.tar.gz"
-      sha256 "08a1a4b98a631af0cfd02c1c50b4d10a5eb287b6d6fd1d73483fc6a369b45031"
+      sha256 "58a2c477f96dc746df2da6e3a51e51adde4d385c3baf3b62bf148008eee1c6f0"
     end
     on_arm do
       url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v#{version}/elastic-fruit-runner_#{version}_linux_arm64.tar.gz"
-      sha256 "55ddcbdd80bff9628b0d72ad8218b9575a918c9d8492f4492c104fb9a2d7f763"
+      sha256 "470922190fc2c2dde3cdf66db61eaefc6b8c462c5f8214fcaaded197683fac82"
     end
   end
 
