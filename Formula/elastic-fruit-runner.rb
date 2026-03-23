@@ -5,21 +5,21 @@
 class ElasticFruitRunner < Formula
   desc "Elastic GitHub Actions self-hosted runner manager for Apple Silicon"
   homepage "https://github.com/boring-design/elastic-fruit-runner"
-  version "0.1.2-rc.21"
+  version "0.1.2"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2-rc.21/elastic-fruit-runner_0.1.2-rc.21_darwin_amd64.tar.gz"
-      sha256 "7aa97b9fcb2495512594151fcdc3ef93639c1da3232b0df415251e2184775d92"
+      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2/elastic-fruit-runner_0.1.2_darwin_amd64.tar.gz"
+      sha256 "2c2cd35cf7f01561296ad4ef7938bd483b431a221c9b491868f503b87461cee1"
 
       define_method(:install) do
         bin.install "elastic-fruit-runner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2-rc.21/elastic-fruit-runner_0.1.2-rc.21_darwin_arm64.tar.gz"
-      sha256 "a5e11410cfedb17464cb5cf780de7e4eea09e9f33d7f92057ca7cb17580fd2a9"
+      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2/elastic-fruit-runner_0.1.2_darwin_arm64.tar.gz"
+      sha256 "93f8ebc39b2f938e16eef6695ac4b81a741f54b6214e253259c40fbfb81057be"
 
       define_method(:install) do
         bin.install "elastic-fruit-runner"
@@ -29,15 +29,15 @@ class ElasticFruitRunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2-rc.21/elastic-fruit-runner_0.1.2-rc.21_linux_amd64.tar.gz"
-      sha256 "e849591c5dd24d3a6b662d77f562d0b7d7549768ca1a960de7b3f6fdcb02ab52"
+      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2/elastic-fruit-runner_0.1.2_linux_amd64.tar.gz"
+      sha256 "1387448d3b173c18c7b2cd1e2a6262020410f0d3e75325a53edc8bc1f300382c"
       define_method(:install) do
         bin.install "elastic-fruit-runner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2-rc.21/elastic-fruit-runner_0.1.2-rc.21_linux_arm64.tar.gz"
-      sha256 "000cdda9de4c6e90fe91a15dc3c73d69cbf539fcb846e19b7efb73214520609c"
+      url "https://github.com/boring-design/elastic-fruit-runner/releases/download/v0.1.2/elastic-fruit-runner_0.1.2_linux_arm64.tar.gz"
+      sha256 "58b70669db8a8b5fa5e7ba24f29d0841d3449218c1221b5102fcc0f801813492"
       define_method(:install) do
         bin.install "elastic-fruit-runner"
       end
