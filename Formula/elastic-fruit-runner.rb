@@ -8,7 +8,7 @@ class ElasticFruitRunner < Formula
   version "0.4.1"
   license "AGPL-3.0"
 
-  depends_on "cirruslabs/cli/tart"
+  depends_on "openai/tools/tart"
   depends_on "sshpass"
 
   on_macos do
